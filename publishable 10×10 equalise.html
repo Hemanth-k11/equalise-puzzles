@@ -1,0 +1,894 @@
+<html>
+<head>
+<title>Untitled document</title>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <script type="text/javascript"> $(document).ready(function(){ disableSave(); $(".sum").on("input", function() { sumThisClass("1"); sumThisClass("2"); sumThisClass("3"); sumThisClass("4"); sumThisClass("5"); sumThisClass("6"); sumThisClass("7"); sumThisClass("8"); sumThisClass("9"); sumThisClass("10"); sumThisClass("11"); sumThisClass("12"); sumThisClass("13"); sumThisClass("14"); sumThisClass("15"); sumThisClass("16");
+sumThisClass("17"); sumThisClass("18"); sumThisClass("18"); sumThisClass("19"); sumThisClass("20"); sumThisClass("21"); validateForm(); }); 
+
+
+
+function validateForm() { var hasError = $(".error").length > 0; if (hasError) { disableSave(); return; } var expectedTotal = $(".total").length * 100; console.log(expectedTotal, getCurrentTotal()); if (expectedTotal == getCurrentTotal()) { enableSave(); } else { disableSave(); } } function getCurrentTotal() { var sumTotal = 0; $(".total").each(function (index, el) { var elValue = parseInt($(el).text()); if (!isNaN(elValue)) { sumTotal += parseInt($(el).text()); } }); return sumTotal; } function disableSave() { $("#btn-save").prop("disabled", true); } function enableSave() { $("#btn-save").prop("disabled", false); } function sumThisClass(className) { var sumTotal = 0; $("." + className).each(function(index, el) { var elValue = parseInt($(el).val()); if (!isNaN(elValue)) { sumTotal += parseInt($(el).val()); } }); $(".sum-" + className).text(sumTotal); if (sumTotal > 1000) { $(".sum-" + className).append("<div class='error'>cannot be greater than 1000</div>"); } } }); 
+
+</script>
+
+<h4> <center>use below given numbers for "equality" each numbers are 1 time in 1 box </h4>
+
+<h4><b><center>Clue numbers : 1, 	4,  7, 13,  17,  20,	 37,	 38,	41, 	42,	 56,
+57, 60, 	61, 62,	 66,	67,	 70,	73,	78,  81,	83,	 84,	85,	 90, 	91, 95</h4>
+
+
+
+
+</head>
+<body>
+
+<style>
+
+table.paleBlueRows {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid #FFFFFF;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 2px;
+}
+table.paleBlueRows tbody td {
+  font-size: 20px;
+  font-weight: bold;
+}
+table.paleBlueRows tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.paleBlueRows thead {
+  background: #0B6FA4;
+  background: -moz-linear-gradient(top, #4893bb 0%, #237dad 66%, #0B6FA4 100%);
+  background: -webkit-linear-gradient(top, #4893bb 0%, #237dad 66%, #0B6FA4 100%);
+  background: linear-gradient(to bottom, #4893bb 0%, #237dad 66%, #0B6FA4 100%);
+  border-bottom: 5px solid #FFFFFF;
+}
+table.paleBlueRows thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+table.paleBlueRows thead th:first-child {
+  border-left: none;
+}
+
+table.paleBlueRows tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  background: #D0E4F5;
+  border-top: 3px solid #444444;
+}
+table.paleBlueRows tfoot td {
+  font-size: 14px;
+}
+table.paleBlueRows tfoot .links {
+  text-align: right;
+}
+table.paleBlueRows tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+</style>
+
+
+
+
+<table class="paleBlueRows">
+<thead>
+<tr>
+<th colspan="12">
+Use given numbers only  equalise the groups
+</th>
+
+
+
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="12">
+<div><h3><b>
+Cross, Across, down rows & colour boxes are equal = 505 : Total = 505
+</h3>
+
+</div>
+</td>
+</tr>
+</tfoot>
+<tbody>
+
+<tr>
+
+<td bgcolor="blue">
+
+<input type="text"="sum 1 5" /default value="44" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 1 6" /default value="46" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 1 7" /default value="28" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td bgcolor="">
+
+<input type="text" class="sum 1 8" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 1 9" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 1 10" /default value="71" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 1 11" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 1 12" /default value="48" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td bgcolor="red">
+
+<input type="text" class="sum 1 13" /default value="26" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 1 14" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td class="total sum-1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 2 5" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 2 6" /default value="50" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 2 7" /default value="55" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 2 8" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 2 9" /default value="40" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 2 10" /default value="30" disabled maxlength="2" size="1">
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 2 11" /default value="24" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 2 12" /default value="75" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 2 13" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 2 14" /default value="23" disabled maxlength="2" size="1">
+
+</td>
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 3 5" /default value="34" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 3 6" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 3 7" /default value="63" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 3 8" /default value="32" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 3 9" /default value="69" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 3 10" /default value="79" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 3 11" /default value="53" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 3 12" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 3 13" /default value="43" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 3 14" /default value="74" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td class="total sum-3"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+
+</tr>
+
+<tr>
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 4 5" /default value="51" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 4 6" /default value="65" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 4 7" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="blue">
+
+<input type="text" class="sum 4 8" /default value="36" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 4 9" /default value="59" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="red">
+
+<input type="text" class="sum 4 10" /default value="22" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 4 11" /default value="39" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 4 12" /default value="" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 4 13" /default value="27" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 4 14" /default value="58" disabled maxlength="2" size="1">
+
+</td>
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+
+</tr>
+
+<tr>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 5" /default value="6" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 6" /default value="93" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 7" /default value="8" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 8" /default value="" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 9" /default value="100" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 10" /default value="5" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 11" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 12" /default value="97" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 13" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 5 14" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+
+</tr>
+
+<tr>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 5" /default value="2" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 6" /default value="99" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 7" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 8" /default value="94" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 9" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 10" /default value="96" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 11" /default value="98" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 12" /default value="3" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 13" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 6 14" /default value="45" disabled maxlength="2" size="1">
+
+</td>
+
+
+
+<td class="total sum-"></td>
+
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+
+</tr>
+
+<tr>
+
+
+<td bgcolor="black">
+
+<input type="text" class="sum 7 5" /default value="49" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 7 6" /default value="47" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 7 7" /default value="35" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td bgcolor="black">
+
+<input type="text" class="sum 7 8" /default value="82" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 7 9" /default value="15" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 7 10" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 7 11" /default value="72" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 7 12" /default value="12" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 7 13" /default value="33" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 7 14" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+
+</tr>
+
+<tr>
+
+
+<td bgcolor="black">
+
+<input type="text" class="sum 8 5" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 8 6" /default value="54" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 8 7" /default value="52" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td bgcolor="">
+
+<input type="text" class="sum 8 8" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 8 9" /default value="80" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 8 10" /default value="31" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 8 11" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 8 12" /default value="68" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 8 13" /default value="89" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 8 14" /default value="11" disabled maxlength="2" size="1">
+
+</td>
+
+
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+
+</tr>
+
+
+<tr>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 9 5" /default value="88" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 9 6" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 9 7" /default value="" maxlength="2" size="1">
+
+</td>
+
+
+<td bgcolor="">
+
+<input type="text" class="sum 9 8" /default value="16" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 9 9" /default value="14" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 9 10" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 9 11" /default value="10" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 9 12" /default value="92" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 9 13" /default value="29" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 9 14" /default value="76" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="black">
+
+<input type="text" class="sum 10 5" /default value="19" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 6" /default value="87" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 7" /default value="21" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 8" /default value="86" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 9" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 10" /default value="18" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 11" /default value="" maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 12" /default value="9" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="">
+
+<input type="text" class="sum 10 13" /default value="64" disabled maxlength="2" size="1">
+
+</td>
+
+<td bgcolor="green">
+
+<input type="text" class="sum 10 14" /default value="25" disabled maxlength="2" size="1">
+
+</td>
+
+
+<td class="total sum-"></td>
+
+<td bgcolor="maroon"><input type="text" id="no"  name="no" default value="" maxlength="3" size="1"></td>
+
+</tr>
+
+
+<tr>
+
+
+<tr>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td class="total sum-"></td>
+
+<td>auto</td>
+
+<td>Total</td>
+
+</tr>
+
+<tr>
+
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+<td bgcolor="maroon"><input type="text" id="no" name="no" maxlength="3" size="1"></td>
+
+
+
+<td>Total</td>
+
+
+<td bgcolor="orrenge">Fill</td>
+
+</tr>
+
+
+
+
+
+
+
+</tbody>
+</table>
+
+</body>
+</html>
